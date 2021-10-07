@@ -116,7 +116,7 @@ long delayAfterTriggerMilis = delayAfterTrigger*1000;           // interval at w
 
 
 // url za update state
-const char URLstate[] = "https://firestore.googleapis.com/v1beta1/projects/vehiclesecurityapp/databases/(default)/documents:commit?key=[AIzaSyBeaGfoqcAExFeKRvkgCOMK-UzguHa-yWE]";
+const char URLstate[] = "https://firestore.googleapis.com/v1beta1/projects/vehiclesecurityapp/databases/(default)/documents:commit?key=[API-KEY]";
 // payload za update state 
 const char PAYLOADstate1[] = "{\"writes\": {\"update\": {\"name\": \"projects/vehiclesecurityapp/databases/(default)/documents/users/";
 //izmedu ide serialID "blU4OAVa9XU7k6YNom2G"
@@ -130,7 +130,7 @@ const char URLlocationNode1[] = "https://firestore.googleapis.com/v1/projects/ve
 //izmedu ide serialID "blU4OAVa9XU7k6YNom2G"
 const char URLlocationNode2[] = "/locationNodes?documentId=";
 //izmedu ide LocationId "202512441655"
-const char URLlocationNode3[] = "&prettyPrint=false&fields=fields&key=[AIzaSyBeaGfoqcAExFeKRvkgCOMK-UzguHa-yWE]";
+const char URLlocationNode3[] = "&prettyPrint=false&fields=fields&key=[API-KEY]";
 char URLlocationNode[270];
 // payload za new location node
 // const char PAYLOADlocationNode[] = "{\"fields\":{\"time\":{\"stringValue\":\"17:50\"}, \"date\":{\"stringValue\":\"25/02/2025\"},\"id\":{\"integerValue\":202512441655},\"triggerSense\":{\"stringValue\":\"Medium\"},\"geopoint\":{\"geoPointValue\":{\"latitude\":11.3245,\"longitude\":11.3245}}}}";
@@ -138,7 +138,7 @@ char PAYLOADlocationNode[270];
 JSONVar myObjectNewLocation;
 
 //url za update location node koordinate
-const char URLupdateLocation[] = "https://firestore.googleapis.com/v1/projects/vehiclesecurityapp/databases/(default)/documents:commit?key=[AIzaSyBeaGfoqcAExFeKRvkgCOMK-UzguHa-yWE]";
+const char URLupdateLocation[] = "https://firestore.googleapis.com/v1/projects/vehiclesecurityapp/databases/(default)/documents:commit?key=[API-KEY]";
 // payload za update location node koordinate
 //const char PAYLOADupdateLocation[] = "{\"writes\":[{\"updateMask\":{\"fieldPaths\":[\"geopoint\"]},\"update\":{\"name\":\"projects/vehiclesecurityapp/databases/(default)/documents/users/blU4OAVa9XU7k6YNom2G/locationNodes/202512441655\",\"fields\":{\"geopoint\":{\"geoPointValue\":{\"latitude\":23.344803170143031,\"longitude\":23.421023690991058}}}}}]}";
 char PAYLOADupdateLocation[312];
@@ -149,8 +149,8 @@ const char URLifttt[] = "https://maker.ifttt.com/trigger/alarm/with/key/eIZZKwHp
 
 //url za get
 const char URLget1[] = "https://firestore.googleapis.com/v1/projects/vehiclesecurityapp/databases/(default)/documents/users/";
-// const char URL[] = "https://firestore.googleapis.com/v1/projects/vehiclesecurityapp/databases/(default)/documents/users/blU4OAVa9XU7k6YNom2G/settings/settingsInfo?prettyPrint=false&fields=fields&key=[AIzaSyBeaGfoqcAExFeKRvkgCOMK-UzguHa-yWE]";
-const char URLget2[] = "/settings/settingsInfo?prettyPrint=false&fields=fields&key=[AIzaSyBeaGfoqcAExFeKRvkgCOMK-UzguHa-yWE]";
+// const char URL[] = "https://firestore.googleapis.com/v1/projects/vehiclesecurityapp/databases/(default)/documents/users/blU4OAVa9XU7k6YNom2G/settings/settingsInfo?prettyPrint=false&fields=fields&key=[API-KEY]";
+const char URLget2[] = "/settings/settingsInfo?prettyPrint=false&fields=fields&key=[API-KEY]";
 char URLget[230];
 JSONVar myObjectGET;
 
